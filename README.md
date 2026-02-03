@@ -1,91 +1,91 @@
-# 🖼️ Computer Vision Lab Series (OpenCV & Python)
-
-This repository contains a collection of **Computer Vision lab experiments** implemented using **Python, OpenCV, NumPy, and Matplotlib**.  
-Each notebook demonstrates fundamental image processing techniques such as **convolution, filtering, padding, noise reduction, edge detection, and histogram equalization** with clear visual results.
-
-The main goal of this project is to **understand how low-level image processing operations work and how they affect images** step by step.
+This README covers a series of Computer Vision laboratory tasks and projects, ranging from foundational image manipulation to advanced deep learning for medical diagnosis.
 
 ---
 
-## 📁 Repository Structure
+# 👁️ Computer Vision & Deep Learning Portfolio
 
-.
-├── Computer Vision_01.ipynb
-├── Computer Vision_02.ipynb
-├── Computer Vision_03.ipynb
-├── Computer Vision_04.ipynb
-└── README.md
+This repository contains a comprehensive collection of Computer Vision projects and laboratory tasks, progressing from fundamental pixel manipulations to state-of-the-art deep learning architectures.
+
+## 📚 Table of Contents
+
+* [Fundamental Image Processing](https://www.google.com/search?q=%23fundamental-image-processing)
+* [Filtering & Spatial Operations](https://www.google.com/search?q=%23filtering--spatial-operations)
+* [Feature Detection & Gradients](https://www.google.com/search?q=%23feature-detection--gradients)
+* [Deep Learning for Medical Diagnosis](https://www.google.com/search?q=%23deep-learning-for-medical-diagnosis)
+
+---
+
+## 🛠️ Project Breakdown
+
+### 1. Fundamental Image Processing 🖼️
+
+**File:** `Computer Vision_01.ipynb`
+
+* **Focus:** Manual image creation and visualization using `NumPy` and `Matplotlib`.
+* **Key Tasks:** * Generating grayscale images from raw arrays.
+* Understanding coordinate systems and intensity values (0-255).
+* Visualization of custom patterns using `plt.imshow`.
+
+
+
+### 2. Filtering & Spatial Operations 🔍
+
+**File:** `Computer Vision_02.ipynb`
+
+* **Focus:** Implementation of 2D convolutions and kernel operations.
+* **Key Tasks:**
+* **Grayscale Transformation:** Converting BGR images to grayscale using OpenCV.
+* **Manual Convolution:** Applying custom kernels (e.g., identity and simple shift kernels) to images using `cv2.filter2D`.
+* **Multi-stage Filtering:** Analyzing the effect of sequential convolutions on image data.
+
+
+
+### 3. Feature Detection & Gradients 📐
+
+**File:** `Computer Vision_03.ipynb`
+
+* **Focus:** Identifying structural elements within images using mathematical operators.
+* **Key Tasks:**
+* **Gradient Calculation:** Computing X/Y gradients and overall magnitude using Sobel operators.
+* **Harris Corner Detection:** Implementing and tuning the Harris Corner algorithm to find interest points in complex images (like pizza or cake).
+* **Visualization:** Overlaying detected corners on gradient magnitudes to evaluate detector performance.
+
+
+
+### 4. Deep Learning for Medical Diagnosis 🩺
+
+**File:** `Computer Vision_04.ipynb`
+
+* **Focus:** Classification of skin cancer using the HAM10000 dataset.
+* **Key Tasks:**
+* **Architectural Comparison:** Training and evaluating **VGG16**, **ResNet50**, and **InceptionV3**.
+* **Performance Analysis:** Comparing training vs. validation loss/accuracy across models.
+* **Conclusion:** Determined that InceptionV3 performs best for this medical dataset due to its multi-scale convolutional blocks that capture both fine lesion textures and large structural patterns.
 
 
 
 ---
 
-## 🧪 Experiments Covered
+## 🚀 Getting Started
 
-### ✅ 1. Image Loading & Preprocessing
-- Load images using OpenCV  
-- Convert between **BGR, RGB, and Grayscale**  
-- Display images using Matplotlib  
+### Prerequisites
 
----
+Ensure you have the following libraries installed:
 
-### ✅ 2. Convolution Operations
-- Apply **2D convolution** using custom kernels  
-- Use:
-  - Identity kernel  
-  - Sharpening kernel  
-  - Edge detection kernels  
-- Apply convolution multiple times to observe cumulative effects  
-- Analyze why some kernels (e.g., identity) do not change the image  
-
----
-
-### ✅ 3. Image Padding Techniques
-- Apply different padding methods:
-  - **Constant padding**
-  - **Reflect padding**
-  - **Edge padding**
-- Compare how padding changes image size and borders  
-
----
-
-### ✅ 4. Noise & Blurring
-- Add **Gaussian noise** to images  
-- Reduce noise using:
-  - Normal blur  
-  - Gaussian blur with different **sigma values**  
-- Observe the trade-off between smoothness and detail loss  
-
----
-
-### ✅ 5. Edge Detection
-- Apply:
-  - **Laplacian filter** for edge detection  
-  - **Vertical and Horizontal kernels** for directional edges  
-- Perform repeated convolutions to strengthen edge responses  
-- Compare vertical vs horizontal edge detection results  
-
----
-
-### ✅ 6. Histogram Equalization
-- Apply **Histogram Equalization** on grayscale images  
-- Improve contrast in low-contrast images  
-- Apply equalization multiple times and observe diminishing changes  
-
----
-
-## 🛠️ Technologies Used
-
-- Python 3  
-- OpenCV (cv2)  
-- NumPy  
-- Matplotlib  
-- Jupyter Notebook / Google Colab  
-
----
-
-## 🚀 How to Run
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+pip install numpy matplotlib opencv-python tensorflow keras
+
+```
+
+### Usage
+
+1. Clone the repository.
+2. Open any `.ipynb` file in Google Colab or Jupyter Notebook.
+3. Update the `cv2.imread()` paths to point to your local images.
+4. Run all cells to see the results and visualizations.
+
+---
+
+## 👤 Author
+
+* **Name:** Md. Sybeen Abrar Prohor
